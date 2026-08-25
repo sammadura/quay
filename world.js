@@ -67,8 +67,8 @@ const WORLD = (() => {
   for (const [x, y] of litLanterns) {
     spr({ x, y, kind: "lantern", lit: true, solid: true, rad: 0.12 });
   }
-  spr({ x: 15.5, y: 25.5, kind: "lantern", lit: false, solid: true, rad: 0.12, use: "light", prompt: "E \u00b7 light", useR: 0.75 });
-  spr({ x: 47.6, y: 22.4, kind: "lantern", lit: false, solid: true, rad: 0.12, use: "light", prompt: "E \u00b7 light", useR: 0.75 });
+  spr({ x: 15.5, y: 25.5, kind: "lantern", lit: false, solid: true, rad: 0.12, use: "light", prompt: "E · light", useR: 0.75 });
+  spr({ x: 47.6, y: 22.4, kind: "lantern", lit: false, solid: true, rad: 0.12, use: "light", prompt: "E · light", useR: 0.75 });
 
   const barrels = [
     [9.4, 20.3], [15.3, 24.6], [29.4, 21.2], [41.6, 24.4],
@@ -89,17 +89,17 @@ const WORLD = (() => {
   spr({ x: 8.6, y: 36.5, kind: "desk", solid: true, rad: 0.34 });
   spr({ x: 8.15, y: 36.15, kind: "desklamp" });
   spr({
-    x: 8.95, y: 36.2, kind: "book", use: "read", prompt: "E \u00b7 read", useR: 0.85,
+    x: 8.95, y: 36.2, kind: "book", use: "read", prompt: "E · read", useR: 0.85,
     text: "Watch log, last leaf: fog on the inner basin. Three lamps out on the long walk. Tide due at the bell.",
   });
-  spr({ x: 7.8, y: 35.7, kind: "key", find: "key", use: "take", prompt: "E \u00b7 take", useR: 0.9 });
+  spr({ x: 7.8, y: 35.7, kind: "key", find: "key", use: "take", prompt: "E · take", useR: 0.9 });
 
   spr({ x: 34.6, y: 34.5, kind: "stool", solid: true, rad: 0.14 });
   spr({ x: 36.2, y: 34.8, kind: "stool", solid: true, rad: 0.14 });
   spr({ x: 37.4, y: 36.7, kind: "desk", solid: true, rad: 0.32 });
   spr({ x: 37.3, y: 33.6, kind: "warm" });
   spr({
-    x: 37.15, y: 36.25, kind: "note", use: "read", prompt: "E \u00b7 read", useR: 0.85,
+    x: 37.15, y: 36.25, kind: "note", use: "read", prompt: "E · read", useR: 0.85,
     text: "If you are reading this, the cask by the door is for the night man. Leave the coin on the sill.",
   });
 
@@ -107,14 +107,14 @@ const WORLD = (() => {
   spr({ x: 55.6, y: 34.1, kind: "net" });
   spr({ x: 52.6, y: 36.6, kind: "net" });
   spr({
-    x: 53.4, y: 35.6, kind: "letter", find: "letter", use: "take", prompt: "E \u00b7 take", useR: 0.85,
+    x: 53.4, y: 35.6, kind: "letter", find: "letter", use: "take", prompt: "E · take", useR: 0.85,
     text: "I left before the weather turned. The loft still smells of tar. Keep the key if the lock still minds you.",
   });
 
-  spr({ x: 15.35, y: 21.35, kind: "coin", find: "coin", use: "take", prompt: "E \u00b7 take", useR: 0.75 });
-  spr({ x: 52.35, y: 14.4, kind: "glove", find: "glove", use: "take", prompt: "E \u00b7 take", useR: 0.8 });
+  spr({ x: 15.35, y: 21.35, kind: "coin", find: "coin", use: "take", prompt: "E · take", useR: 0.75 });
+  spr({ x: 52.35, y: 14.4, kind: "glove", find: "glove", use: "take", prompt: "E · take", useR: 0.8 });
 
-  const boat = spr({ x: 54.5, y: 3.28, kind: "boat", use: "sit", prompt: "E \u00b7 sit", useR: 1.15 });
+  const boat = spr({ x: 54.5, y: 3.28, kind: "boat", use: "sit", prompt: "E · sit", useR: 1.15 });
 
   const cat = spr({
     x: 10.4, y: 22.1, kind: "cat", solid: true, rad: 0.16,
