@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
   <canvas id="view"></canvas>
@@ -18,15 +18,19 @@
   <div id="vignette"></div>
 
   <div id="hud" hidden>
-    <div id="place">Quay</div>
-    <div id="hint">WASD walk · mouse look · arrows turn</div>
+    <div id="place">The Slip</div>
+    <div id="found">0 / 4</div>
+    <div id="hint">WASD walk \u00b7 mouse look \u00b7 E use \u00b7 M mute</div>
   </div>
+  <div id="prompt" hidden></div>
+  <div id="read" hidden><p id="read-text"></p></div>
+  <div id="card" hidden><p>the harbor has your name now</p></div>
 
   <div id="pad" hidden>
-    <button type="button" data-dir="n" aria-label="forward">▲</button>
-    <button type="button" data-dir="w" aria-label="left">◀</button>
-    <button type="button" data-dir="s" aria-label="back">▼</button>
-    <button type="button" data-dir="e" aria-label="right">▶</button>
+    <button type="button" data-dir="n" aria-label="forward">\u25b2</button>
+    <button type="button" data-dir="w" aria-label="left">\u25c0</button>
+    <button type="button" data-dir="s" aria-label="back">\u25bc</button>
+    <button type="button" data-dir="e" aria-label="right">\u25b6</button>
   </div>
   <div id="look-hint" hidden>drag to look</div>
 
@@ -34,14 +38,16 @@
     <div class="gate-inner">
       <p class="kicker">night harbor</p>
       <h1>Quay</h1>
-      <p class="line">lanterns over wet cobble</p>
+      <p class="line">the tide left the lamps on</p>
       <button type="button" id="enter">Walk</button>
     </div>
   </div>
 
-  <script src="world.js"></script>
-  <script src="input.js"></script>
-  <script src="render.js"></script>
-  <script src="app.js"></script>
+  <script src="world.js?v=2"></script>
+  <script src="input.js?v=2"></script>
+  <script src="audio.js?v=2"></script>
+  <script src="fx.js?v=2"></script>
+  <script src="render.js?v=2"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>
