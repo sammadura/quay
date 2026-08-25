@@ -61,8 +61,16 @@ html, body {
   text-shadow: 0 0 18px rgba(228,180,74,0.35);
 }
 
+#found {
+  margin-top: 2px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  color: var(--gold-soft);
+  opacity: 0.9;
+}
+
 #hint {
-  margin-top: 4px;
+  margin-top: 6px;
   font-size: 11px;
   letter-spacing: 0.08em;
   color: var(--stone);
@@ -71,6 +79,45 @@ html, body {
 }
 
 #hint.fade { opacity: 0; }
+
+#prompt {
+  position: fixed;
+  left: 50%;
+  bottom: max(88px, calc(env(safe-area-inset-bottom) + 72px));
+  transform: translateX(-50%);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 18px;
+  letter-spacing: 0.16em;
+  color: var(--gold);
+  text-shadow: 0 0 16px rgba(228,180,74,0.4);
+  pointer-events: none;
+}
+
+#read, #card {
+  position: fixed;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  width: min(420px, calc(100vw - 40px));
+  text-align: center;
+  pointer-events: none;
+}
+
+#read p, #card p {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.45;
+  color: var(--mist);
+  background: rgba(7,8,12,0.72);
+  border: 1px solid rgba(228,180,74,0.22);
+  padding: 18px 22px;
+}
+
+#card p {
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
 
 #gate {
   position: fixed;
