@@ -98,8 +98,8 @@
   }
 
   function updatePrompt() {
-    if (player.sitting) { setPrompt("E \u00b7 stand"); return; }
-    if (reading) { setPrompt("E \u00b7 close"); return; }
+    if (player.sitting) { setPrompt("E · stand"); return; }
+    if (reading) { setPrompt("E · close"); return; }
     const u = WORLD.nearestUse(player.x, player.y);
     setPrompt(u ? u.prompt : "");
   }
